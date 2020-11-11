@@ -691,15 +691,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="480" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="26" horizontalPageScroll="10" verticalLineScroll="26" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25i-7f-3gK">
-                        <rect key="frame" x="-1" y="-1" width="150" height="362"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                    <scrollView autohidesScrollers="YES" horizontalLineScroll="26" horizontalPageScroll="10" verticalLineScroll="26" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25i-7f-3gK">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="360"/>
                         <clipView key="contentView" drawsBackground="NO" id="0ba-Qw-0z3">
-                            <rect key="frame" x="1" y="1" width="148" height="360"/>
+                            <rect key="frame" x="1" y="1" width="148" height="358"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <outlineView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" multipleSelection="NO" autosaveColumns="NO" rowHeight="24" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" indentationPerLevel="16" outlineTableColumn="RNf-7c-Wmi" id="LCq-XQ-00t">
-                                    <rect key="frame" x="0.0" y="0.0" width="148" height="360"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="148" height="358"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -746,6 +745,9 @@
                             </subviews>
                             <nil key="backgroundColor"/>
                         </clipView>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="rCs-Fd-Ud5"/>
+                        </constraints>
                         <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="g5o-px-irF">
                             <rect key="frame" x="1" y="383" width="148" height="16"/>
                             <autoresizingMask key="autoresizingMask"/>
@@ -756,6 +758,11 @@
                         </scroller>
                     </scrollView>
                 </subviews>
+                <constraints>
+                    <constraint firstItem="25i-7f-3gK" firstAttribute="leading" secondItem="EiT-Mj-1SZ" secondAttribute="leading" id="dYg-Ld-NIf"/>
+                    <constraint firstAttribute="bottom" secondItem="25i-7f-3gK" secondAttribute="bottom" id="miZ-pW-f0z"/>
+                    <constraint firstItem="25i-7f-3gK" firstAttribute="top" secondItem="EiT-Mj-1SZ" secondAttribute="top" id="q4p-rA-KGB"/>
+                </constraints>
             </view>
             <point key="canvasLocation" x="-106" y="-154"/>
         </window>
